@@ -1,0 +1,4 @@
+import tkinter
+
+window = Tk()
+
