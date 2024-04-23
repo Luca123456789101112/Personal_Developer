@@ -72,6 +72,9 @@ def func():
 				self.balance += y
 
 				print(f"Your new balance is {self.balance}")
+			
+			else:
+				print("That function is not available")
 
 
 		def shop(self):

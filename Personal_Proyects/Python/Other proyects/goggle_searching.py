@@ -27,7 +27,3 @@ def func():
         ask = input("Do you want to continue searching: ")
 
 func()
-        
-        
-#https://www.google.com/search?q=search+&oq=search+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEIMjg3OWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8
-
