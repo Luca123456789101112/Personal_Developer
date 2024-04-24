@@ -2,7 +2,7 @@ def func():
 
 	class Account():
 
-		def __init__(self,user = input("Quien esta iniciando sesion: "), database= {"jose":"josesito123","juan":"juansito123","roman":"romancito123"},shoplist = {"apple":5,"potatoe":2,"banana":10},balance = 0,obj= []):
+		def __init__(self,user = input("Quien esta iniciando sesion: "), database= {"jose":"josesito123","juan":"juansito123","roman":"romancito123"},shoplist = {"apple":5,"potatoe":2,"banana":10},balance = 0,obj= [],AlreadyLoged = False):
 
 			self.user = user
 
@@ -13,39 +13,39 @@ def func():
 			self.balance = balance
 
 			self.obj = obj
-
+        
 		def initialize(self):
-
-			allowed1 = True
-
-			allowed2 = True
-
-			if self.user in self.database:
-
-				print(f"Welcome {self.user}")
-
-				psw = input("Now enter your password: ")
-
-				if psw == self.database[self.user]:
-
-					print("You can continue now")
-
-					return True
-
-				else:
-
-					print("Access denied")
-
-					allowed2 = False
-
-					return allowed2
-			else:
-
-				print("You are not in the database")
-
-				allowed1 = False
-
-				return allowed1
+   
+ 			allowed1 = True
+ 
+ 			allowed2 = True
+ 
+ 			if self.user in self.database:
+ 
+ 				print(f"Welcome {self.user}")
+ 
+ 				psw = input("Now enter your password: ")
+ 
+ 				if psw == self.database[self.user]:
+ 
+ 					print("You can continue now")
+ 
+ 					return True
+ 
+ 				else:
+ 
+ 					print("Access denied")
+ 
+ 					allowed2 = False
+ 
+ 					return allowed2
+ 			else:
+ 
+ 				print("You are not in the database")
+ 
+ 				allowed1 = False
+ 
+ 				return allowed1
 
 		def modify_balance(self):
 
@@ -55,7 +55,7 @@ def func():
 
 				x = int(input("How much money do you want to withdraw: "))
 
-				if self.balance =< x:
+				if self.balance <= x:
 
 					self.balance -= x
 
@@ -116,7 +116,7 @@ def func():
 
 		if x == True:
 
-			ask = input("Que queres hacer ahora: ")
+			ask = input("What do you want to do now: ")
 
 		else:
 
